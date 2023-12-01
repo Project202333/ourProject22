@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Nameliist.css">
+    <link rel="stylesheet" href="Maiinpage.css">
+
+    
+    <title>فريق الإعداد</title>
+<style>
+    
+</style>
+</head>
+<body>
+    <ul class="navbar">
+        <li><a href="MainPage.html">الرئيسية</a></li>
+        <li><a href="vision.html">رؤية المملكة</a></li>
+        <li><a href="king.html">ملوك المملكة</a></li>
+        <li><a href="tourism.html">السياحة في المملكة</a></li>
+        <li><a href="Namelist.html">فريق الاعداد</a></li>
+        <li><a href="Forrm.html" class="act" style="float: left;">تـواصـل معنــا</a></li>
+        
+     </ul>
+   
+        <h1>اعضــاء الفــريق</h1>
+        <div id="names"></div>
+
+
+        <script>
+             team = [
+                'ريناد محمد الشمراني',
+                'لمى عيسى هملان',
+                'لمى مسعد العنزي',
+                'سارة زياد مدني'];
+    
+            team.sort(() => Math.random() - 0.5);
+            team.forEach(m => {
+                names.innerHTML += '<p>' + m;
+            });
+        </script>
+    </body>
+</html>
